@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+          <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>video</title>
+<style>
+body {
+    background-color: black;
+    display: flex; /* Enable flexbox for the body */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Ensure body takes up full viewport height */
+}
+
+button {
+    margin: 20px; /* Reduced margin for better spacing */
+}
+
+.myvideo { /* This class is not used in your HTML, so I've removed it.  Directly style the video instead. */
+    /* Styles previously in .myvideo go here if you want to target the video specifically*/
+}
+
+h5 {
+    text-align: center;
+    background-color: #ffa450;
+    font-size: 30px;
+    margin-bottom: 20px; /* Added margin for better spacing */
+}
+
+p {
+    background-color: #ffa450;
+    text-align: center;
+    margin-bottom: 20px; /* Added margin for better spacing */
+}
+
+video { /* Added styles to center the video within its container. */
+  display: block; /* Makes the video behave like a block element */
+  margin: 0 auto; /* Centers it horizontally */
+}
+
+
+</style>
+</head>
+<body>
+<h5> video: </h5>
+<video id="myVideo" width="350" height="300" playsinline>
+  <source src="M.mp4" type="video/mp4">
+  
+</video>
+<button onclick="playVideo()">Play Video</button>
+<p>
+  <em>
+limited video in website
+  </em>
+</p>
+<h6><mark>
+  disclaimer: dont share this website.
+</mark></h6>
+    <footer>
+      
+     <p><a href="https://www.facebook.com/share/16akcoigB6/"><mark>&copy; Developer:Lorenz_cpp</m></a></p>
+      
+    </footer>
+<script>
+function playVideo() {
+  document.getElementById("myVideo").play();
+}
+</script>
+
+</body>
+</html>
